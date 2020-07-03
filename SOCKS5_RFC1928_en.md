@@ -114,7 +114,7 @@ identifier/method selection message:
 +------+-----------------+----------------+<br>
 |VER | NMETHODS |  METHODS |<br>
 +------+------------------+---------------+<br>
-|&ensp;&ensp;1&ensp;&ensp;|&ensp;&ensp;&ensp;1&ensp;&ensp;&ensp;|&ensp;&ensp;&ensp;&ensp;&ensp;1 to 255&ensp;&ensp;&ensp;&ensp;|<br>
+|&ensp;&ensp;1&ensp;&ensp;|&ensp;&ensp;&ensp;1&ensp;&ensp;&ensp;|&ensp;&ensp;&ensp;1 to 255&ensp;&ensp;&ensp;|<br>
 +------+------------------+---------------+<br>
 
 The VER field is set to X’05’ for this version of the protocol. The
@@ -169,7 +169,7 @@ The SOCKS request is formed as follows:
 +-----+--------+-------+--------+----------------+---------------+<br>
 |VER | CMD | RSV | ATYP | DST.ADDR | DST.PORT |<br>
 +-----+--------+-------+--------+----------------+---------------+<br>
-|&ensp;&ensp;1&ensp;&ensp;|&ensp;&ensp;1&ensp;&ensp;| X’00’|&ensp;&ensp;1&ensp;&ensp;&ensp;|&ensp;&ensp;Variable&ensp;&ensp;|&ensp;&ensp;&ensp;&ensp;&ensp;2&ensp;&ensp;&ensp;&ensp;&ensp;|<br>
+|&ensp;&ensp;1&ensp;|&ensp;&ensp;1&ensp;&ensp;| X’00’|&ensp;&ensp;1&ensp;&ensp;&ensp;|&ensp;&ensp;Variable&ensp;&ensp;|&ensp;&ensp;&ensp;&ensp;&ensp;2&ensp;&ensp;&ensp;&ensp;&ensp;|<br>
 +-----+--------+-------+--------+---------------+----------------+<br>
 
 Where:
@@ -222,7 +222,7 @@ returns a reply formed as follows:
 +------+------+-------+--------+-----------------+----------------+<br>
 |VER | REP |  RSV | ATYP | BND.ADDR | BND.PORT |<br>
 +------+------+-------+--------+-----------------+----------------+<br>
-|&ensp;&ensp;1&ensp;&ensp;|&ensp;&ensp;1&ensp;| X’00’ |&ensp;&ensp;&ensp;1&ensp;&ensp;|&ensp;&ensp;&ensp;Variable&ensp;&ensp;|&ensp;&ensp;&ensp;&ensp;&ensp;2&ensp;&ensp;&ensp;&ensp;   |<br>
+|&ensp;&ensp;1&ensp;|&ensp;&ensp;1&ensp;| X’00’ |&ensp;&ensp;&ensp;1&ensp;&ensp;|&ensp;&ensp;&ensp;Variable&ensp;&ensp;|&ensp;&ensp;&ensp;&ensp;&ensp;2&ensp;&ensp;&ensp;&ensp;   |<br>
 +------+------+-------+--------+-----------------+----------------+<br>
 
 Where:
@@ -342,7 +342,7 @@ header with it:
 +------+---------+--------+---------------+----------------+-----------+<br>
 | RSV | FRAG | ATYP | DST.ADDR | DST.PORT | DATA |<br>
 +------+---------+--------+----------------+---------------+-----------+<br>
-|&ensp;&ensp;2&ensp;&ensp;|&ensp;&ensp;1&ensp;&ensp;&ensp;|&ensp;&ensp;1&ensp;&ensp;&ensp;|&ensp;&ensp;Variable&ensp;&ensp;|&ensp;&ensp;&ensp;&ensp;&ensp;2&ensp;&ensp;&ensp;&ensp;&ensp;| Variable |<br>
+|&ensp;&ensp;2&ensp;|&ensp;&ensp;1&ensp;&ensp;&ensp;|&ensp;&ensp;1&ensp;&ensp;&ensp;|&ensp;&ensp;Variable&ensp;&ensp;|&ensp;&ensp;&ensp;&ensp;2&ensp;&ensp;&ensp;&ensp;| Variable |<br>
 +------+---------+--------+---------------+----------------+-----------+<br>
 
 The fields in the UDP request header are:
