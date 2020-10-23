@@ -17,4 +17,5 @@ GOOS=windows GOARCH=386 go build myProxy.go
 
 ## 使用
 e.p. ./myProxy --listen 0.0.0.0:9999
+
 同时配合浏览器配置代理服务
