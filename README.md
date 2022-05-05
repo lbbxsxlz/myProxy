@@ -18,4 +18,13 @@ GOOS=windows GOARCH=386 go build myProxy.go
 ## 使用
 e.p. ./myProxy --listen 0.0.0.0:9999
 
-同时配合浏览器配置代理服务
+同时在需要上网的机器上使用浏览器配置代理服务
+
+以谷歌 chrome 浏览器为例：
+１、在 google 浏览器中添加 SwitchyOmega 插件
+在 Chrome 地址栏输入 chrome://extensions 即可打开扩展程序， 然后拖动后缀名为.crx 的SwitchyOmega 安装文件到扩展程序中进行安装，片刻即可安装完成。
+Chrome 较高版本已经不支持以上描述的.crx 安装，需要将后缀 crx 改成 zip， 然后解压 zip 压缩包。然后在扩展程序页面中，找到右上角的开发者模式，将开发、者模式打开， 点击“加载已解压的扩展程序”铵钮，打开文件选择窗口，选择刚才解压的目录，然后点击“选择文件夹”按钮即可。
+２、点击浏览器的右上角的扩展程序按钮，选择“proxy”命令，进入“SwitchyOmega 页面”；
+３、在 SwitchyOmega 页面，选择代理协议为“SOCKS5”，输入代理服务器地址和端口（运行myproxy的IP与端口），填完之后，点击“应用选项”按钮
+４、点击浏览器的右上角的扩展程序按钮，选择“proxy”命令。
+５、在浏览器中输入想访问的域名或IP即可，Please　enjoy！
